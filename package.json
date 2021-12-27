@@ -15,5 +15,9 @@
   },
   "keywords": [],
   "author": "Blessed Sibanda",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cross-conf-env": "^1.2.1",
+    "rimraf": "^3.0.2"
+  }
 }
