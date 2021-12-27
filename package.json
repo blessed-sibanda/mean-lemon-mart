@@ -1,0 +1,19 @@
+{
+  "name": "mean-lemon-mart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "webAppGitUrl": "https://github.com/blessed-sibanda/lemon-mart.git"
+  },
+  "scripts": {
+    "webapp:clean": "cross-conf-env rimraf web-app && git rm -r --cached web-app",
+    "webapp:init": "cross-conf-env git submodule add $npm_package_config_webAppGitUrl web-app",
+    "postwebapp:init": "git submodule status web-app",
+    "modules:init": "git submodule update --init --recursive",
+    "modules:update": "git submodule update --recursive --remote"
+  },
+  "keywords": [],
+  "author": "Blessed Sibanda",
+  "license": "ISC"
+}
